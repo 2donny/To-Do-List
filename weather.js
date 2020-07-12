@@ -4,7 +4,7 @@ const  COORDS = 'coords';
 
 function saveCoords(coordsObj) {
     const coords = JSON.stringify(coordsObj);
-    localStorage.setItem(COORDS, coords);
+    localStorage.setItem(C햣OORDS, coords);
 }
 
 function handleGeoSuccess(position) {
