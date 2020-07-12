@@ -12,10 +12,10 @@ function saveName(text) {
 function handleSubmit(event) { //submit시 새로고침을 막고, 입력값을 local Storage에 저장 후, paintGreeting() 호출
     event.preventDefault();
     const currentValue = input.value;
-    paintGreeting(currentValue);
+    paintGreeting(currentValue);  
     saveName(currentValue);
 }
-
+ 
 function askForName() {
     form.classList.add('showing'); // form이 보인다
     form.addEventListener("submit", handleSubmit); // submit을 기다린다.
