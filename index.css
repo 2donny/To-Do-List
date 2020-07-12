@@ -1,0 +1,13 @@
+h4 {
+    font-family: cursive;
+}
+
+.form,
+.greetings
+{
+    display: none;
+}
+
+.showing {
+    display: block;
+}
