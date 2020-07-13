@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO-do-List</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Review To-Do-List</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
+    <!-- Container -->
+    <section class="center">
+        <!-- Clock -->
+        <div class="clockContainer">
+            <h1></h1>
+        </div>
+    
+        <!-- greeting -->
+        <form class="js-form-greeting form">
+            <input type="text" placeholder="Write your name">
+        </form> 
+        <h4 class="js-greeting-text greeting-text"></h4>
+    
 
-    <!-- Clock -->
-    <div class="js-clock">
-        <h1>00:00:00</h1>
+        <!-- To-Do-List -->
+        <form class="js-form-toDo">
+            <input type="text" placeholder="Write a to do">
+        </form>
+        <ul class="to-do-list"></ul>
+    </section>
+
+    <!-- Weather -->
+    <div class="js-weather weather">
+        <span class="js-text"></span>
     </div>
 
-    <!-- greeting-form -->
-    <form class="js-form form">
-        <input type="text" placeholder="Wrtie your name">
-    </form>    
-    <h4 class="js-greetings greetings"></h4> 
-
-
-    <!-- To-Do-list -->
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write your to do">
-    </form>
-    <ul class="js-toDoList"> 
-    </ul>
- 
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="./todo.js"></script>
-    <script src="./background.js"></script>
-    <script src="./weather.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bgImage.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
